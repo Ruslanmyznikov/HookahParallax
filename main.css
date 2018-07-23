@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: KushanScript;
+    src: url(fonts/KaushanScript-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+    .hero__header {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 656px auto;
+        width: 1200px; 
+        height: 80px;
+        margin-top: 80px;
+    }
+        .hero__header p {
+            color: white;
+            font-family: KushanScript;
+            font-size: 60px;
+            justify-self: right;
+            line-height: 66px;
+        }
+
+        .hero__header img{
+            justify-self: end;
+            align-self: center;
+            height: 44px;
+            cursor: pointer;
+        }
+
+    .hero__title {
+        font-family: Montserrat;
+        height: 320px;
+        text-align: center;
+        margin-top: 160px;
+        line-height: 145px;
+    }
+
+        .hero__title h1 {
+            text-transform: uppercase;
+            color: white;
+            font-size: 144px;
+            text-align: center;
+            letter-spacing: 14.5px;
+            font-weight: normal;
+            margin-left: 65px;
+            padding-top: 26px;
+        }
+        
+        .hero__title span {
+            margin-right: 50px;
+        }
+
+    .hero__learn-more {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+
+        .hero__learn-more button {
+            font-family: KushanScript;
+            font-size: 36px;
+            width: 320px;
+            height: 100px;
+            color: white;
+            background-color: #7004F9;
+            border: solid 1px #7004F9;
+            cursor: pointer;
+            box-shadow: 0px 0px 180px 20px rgba(112, 4, 249 ,0.68);
+            border-radius: 8px;
+        }
+
+            .hero__learn-more button:hover {
+                box-shadow: 0px 0px 180px 40px rgb(210,98,251, .32);
+                background-image: linear-gradient( 90deg, rgb(96,12,244) 0%, rgb(226,110,252) 100%);
+            }
+        
+        .hero__learn-more img {
+            margin-top: 35px;
+            transform: rotate(90deg);
+            width: 40px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+    .hero__fruit-left {
+        position: absolute;
+        top: 80px;
+        left: -48px;
+        height: 100vh; 
+        overflow: hidden;
+    }
+
+    .hero__smock-left {
+        position: absolute;
+        top: 240px;
+        left: 0px;
+    }
+    .hero__berry-right {
+        position: absolute;
+        top: 80px;
+        right: -140px;
+        height: 100vh; 
+        overflow: hidden;
+    }
+
+
+    .hero__smock-right {
+        position: absolute;
+        top: 216px;
+        right: 0px;
+        overflow: hidden;
+    }
